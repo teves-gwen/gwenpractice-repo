@@ -5,7 +5,20 @@
 
 #print(123_456_789)
 
-#print("Helloe"[5])
+#print("Christian"[8])
+
+#my_string = "Hello World!"
+#my_string = "hi"
+#print (str(my_string))
+
+#my_number = "Christian"
+#print (str(my_number))
+
+
+age = input ("Enter your age: ")
+int_age = int(age)
+print(f"Your age is {int_age + 3}")
+
 
 #name = "Steven" # 6 characters
 #name_length = len(name)
