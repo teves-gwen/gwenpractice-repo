@@ -52,6 +52,7 @@ print(f"Your age is {age}")
 
 age = input("Enter your age:")
 int_age = int(age)
+
 print(f"Your age after 3 years is {int_age + 3}")"""
 
 # age = int(input("Enter your age:"))

@@ -15,3 +15,4 @@ if number3 > temp_highest:
     temp_highest = number3
 
 print(f"The highest number is {temp_highest}.")
+

@@ -19,3 +19,4 @@ elif x == 0:
     print("The point is on the y-axis.")
 else:
     print("The point is on the x-axis.")
+

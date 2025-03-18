@@ -8,3 +8,4 @@ elif char in "bcdfghjklmnpqrstvwxyzBCDFGHJKLMNPQRSTVWXYZ":
     print("The character is a consonant.")
 else:
     print("Invalid input. Please enter a letter.")
+    
