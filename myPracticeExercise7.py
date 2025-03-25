@@ -1,22 +1,21 @@
 DISCOUNT_RATE = 0.10 
-total_amount = 0 
 
 def input_products():
     order_list = []
 
     while True:
-        product_name = input("Enter product name: ")
+        product_name = input("\nEnter product name: ")
         price = float(input("Enter price: "))
         quantity = int(input("Enter quantity: "))
 
         total_price = order_details(price, quantity) 
         order_list.append((product_name, price, quantity, total_price)) 
 
-        add_item = input("Do you want to add another item? (yes/no): ").lower()
-        if add_item == "no":  
+        add_item = input("\nDo you want to add another item? (y/n): ").lower()
+        if add_item == "n":  
             break
-        elif add_item != "yes":
-            print("Invalid input. Please enter 'yes' or 'no'.")
+        elif add_item != "y":
+            print("\nInvalid input. Please enter y for 'yes' or n for 'no'.")
 
     discount = discount_privilege(order_list) 
     display_details(order_list, discount)
@@ -27,9 +26,11 @@ def order_details(price, quantity):
 def discount_privilege(order_list):
     global customer_name, senior_id
 
-    customer_name = input("Enter your name: ")
+    customer_name = input("\nEnter your name: ")
     senior_id = input("Enter your senior ID no. (Leave blank if not senior citizen): ").strip()
 
+    total_amount = 0 
+    
     for item in order_list:
         total_amount += item[3]  
 
@@ -41,25 +42,23 @@ def discount_privilege(order_list):
     return total_amount - discount  
 
 def display_details(order_list, grand_total):
-    # Display each product in the order list
-    print("\n===== ORDER DETAILS =====")
+
+    print("\n= = = ORDER DETAILS = = =")
     for product_name, price, quantity, total in order_list:
         print(f"Product: {product_name}")
         print(f"Price: {price}")
         print(f"Quantity: {quantity}")
-        print(f"Total: {total}\n")
+        print(f"Total: {total:.2f}\n")
 
-    # Display customer details
-    print("===== CUSTOMER DETAILS =====")
+    print("\n= = = CUSTOMER DETAILS = = =")
     print(f"Customer Name: {customer_name}")
     print(f"Senior ID No.: {'N/A' if not senior_id else senior_id}")
 
-    # Display total amount
-    print("===== BILL =====")
+    print("\n= = = BILL = = =")
     print(f"Grand Total: {grand_total:.2f}")
-    print("\nThank you for your order!")
 
 input_products()
+print("\nThank you for your order!")
 
 
 """
