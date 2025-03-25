@@ -130,7 +130,7 @@ print("Loop Ended")
 
 # magra-run sya unless i-type ko ang "exit"""
 
-"""
+
 for number in range (1, 11):
     if number == 7:
         continue # mawawala yung 7
@@ -139,8 +139,8 @@ for number in range (1, 11):
 for number in range (1, 11):
     if number == 7:
         break # titigil na siya sa 7
-    print(number)"""
-"""
+    print(number)
+""""
 
 message = "S a b r i n a"
 def greet():
