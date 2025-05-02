@@ -1,52 +1,46 @@
-# QUIZ
+
 total_score = 0
 
-print("Welcome to GWN10's team quiz!")
+print("\nWelcome to GWN10's team quiz!")
+print("You will be asked 10 questions. Please answer them correctly.")
 
-print("(Gwen) What is the capital of the Philippines? ")
-print("a. Cebu")
-print("b. Manila")
-print("c. Davao")
-print("d. Quezon City")
+print("\n(Gwen Teves) Who is known as the Father of the Philippine Revolution?")
+print("a) Jose Rizal             c) Andres Bonifacio")
+print("b) Emilio Aguinaldo       d) Antonio Luna")
 
-question1 = input("Enter your answer: ")
+your_answer1 = input("Enter your answer: ")
 
-if question1 == "b" or question1 == "B":
-    print("Correct!")
+if your_answer1 == "c" or your_answer1 == "C":
+    print("Your answer is correct!")
     total_score += 1
 else:
-    print(f" {question1} is incorrect. The correct answer is B.")
+    print(f"{your_answer1} is incorrect. The correct answer is C.")
 
-print("(Gwen) What is the capital of Japan? ")
-print("a. Tokyo")
-print("b. Kyoto")
-print("c. Osaka")
-print("d. Nagoya")
+print("\n(Gwen Teves) Who was the first president of the Philippines?")
+print("a) Manuel L. Quezon      c) Jose P. Laurel")
+print("b) Emilio Aguinaldo      d) Ferdinand Marcos")
 
-question2 = input("Enter your answer: ")
+your_answer6 = input("Enter your answer: ")
 
-if question2 == "a" or question2 == "A":
-    print("Correct!")
+if your_answer6 == "b" or your_answer6 == "B":
+    print("Your answer is correct!")
     total_score += 1
 else:
-    print(f" {question2} is incorrect. The correct answer is B.")
+    print(f"{your_answer6} is incorrect. The correct answer is B.")
 
-print("(Gwen) What is the capital of South Korea? ")
-print("a. Seoul")
-print("b. Busan")
-print("c. Incheon")
-print("d. Daegu")
+print("\n(Gwen) What is the capital of South Korea? ")
+print("a) Seoul         c) Incheon")
+print("b) Busan         d) Gwangju")
 
-question3 = input("Enter your answer: ")
+your_answer3 = input("Enter your answer: ")
 
-if question3 == "a" or question3 == "A":
-    print("Correct!")
+if your_answer3 == "a" or your_answer3 == "A":
+    print("Your answer is correct!")
     total_score += 1
 else:
-    print(f" {question3} is incorrect. The correct answer is A.")
+    print(f"{your_answer3} is incorrect. The correct answer is A.")
 
-print("You're now done with the quiz. Thank you for participating!")
-print("Your total score is: ", total_score)
+print(f"\nCongratulations! You got {total_score} out of 10 items.")
 
 
     

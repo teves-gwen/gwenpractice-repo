@@ -18,9 +18,9 @@
 #print (str(my_number))
 
 
-age = input ("Enter your age: ")
+"""age = input ("Enter your age: ")
 int_age = int(age)
-print(f"Your age is {int_age + 3}")
+print(f"Your age is {int_age + 3}")"""
 
 
 # name = "Steven" # 6 characters
